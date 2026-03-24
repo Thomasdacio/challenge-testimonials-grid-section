@@ -1,0 +1,43 @@
+@media (max-width: 1180px) {
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container {
+        display: grid;
+        grid-template-areas: 
+        "daniel daniel  kira"
+        "jeanette jonathan kira"
+        "patrick patrick .";
+    }
+}
+
+@media (max-width: 900px) {
+    .container {
+        display: grid;
+        grid-template-areas: 
+        "daniel daniel"
+        "jonathan kira"
+        "jeanette kira"
+        "patrick patrick"; 
+
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-areas: 
+        "daniel"
+        "jonathan"
+        "jeanette"
+        "patrick"
+        "kira"; 
+    }
+
+    .card-daniel, .card-patrick {
+        width: 16rem;
+    }
+
+}

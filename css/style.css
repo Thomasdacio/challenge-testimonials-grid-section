@@ -1,0 +1,155 @@
+html {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--white);
+    width: 100%;
+    max-width: 100rem;
+}
+
+/* <--- Container ---> */
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "daniel daniel jonathan kira"
+        "jeanette patrick patrick kira";
+    gap: 1.5rem 2rem;
+    margin-top: 5rem;   
+}
+
+/* <--- Cards - Profile ---> */
+
+.container .profile {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.container .profile .profile-text {
+    padding-left: 1rem;
+}
+
+.container .profile .profile-text .name {
+    font-size: .8rem;
+    font-weight: 500;
+    margin-bottom: -.2rem;
+}
+
+.container .profile .profile-text .subtitle {
+    font-size: .7rem;
+}
+
+.card-jeanette .profile .profile-text .name,
+.card-jeanette .title,
+.card-kira .profile .profile-text .name,
+.card-kira .title {
+    color: var(--grey-500);
+}
+
+/* <--- Card - Images ---> */
+
+.card-daniel .profile .daniel-avatar {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 2px solid var(--purple-300);
+}
+
+.card-jonathan img,
+.card-kira img,
+.card-jeanette img,
+.card-patrick img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+
+.card-patrick img {
+    border: 2px solid var(--purple-500);
+}
+
+.card-jonathan img,
+.card-kira img,
+.card-jeanette img {
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+/* <--- Cards - Text ---> */
+
+.container .title {
+
+    font-size: 1.26rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+
+}
+
+.container .depoiment {
+    font-size: .83rem;
+    line-height: 1.15rem;
+
+}
+
+.card-daniel,
+.card-jonathan,
+.card-patrick {
+    color: var(--white);
+}
+
+.card-jeanette,
+.card-kira {
+    color: var(--grey-400);
+}
+
+
+/* <--- Cards ---> */
+
+.card-daniel,
+.card-jonathan,
+.card-jeanette,
+.card-kira,
+.card-patrick {
+    padding: 2rem;
+    border-radius: .6rem;
+    box-shadow: 2rem 2rem 10rem -2rem;
+}
+
+.card-daniel {
+    grid-area: daniel;
+    background-color: var(--purple-500);
+    width: 33.7rem;
+    background-image: url(/images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 23.3rem top;
+
+}
+
+.card-jonathan {
+    grid-area: jonathan;
+    background-color: var(--grey-500);
+    width: 16rem;
+}
+
+.card-kira {
+    grid-area: kira;
+    background-color: var(--white);
+    width: 16rem;
+}
+
+.card-jeanette {
+    grid-area: jeanette;
+    background-color: var(--white);
+    width: 16rem;
+}
+
+.card-patrick {
+    grid-area: patrick;
+    background-color: var(--dark-blue);
+    width: 33.7rem;
+}
